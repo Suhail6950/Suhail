@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preference Form</title>
+</head>
+<body>
+
+<form action="/submit-preferences" method="post">
+  <h2>Select Your Preferences</h2>
+  <span>
+    <fieldset>
+        <legend>Interests</legend>
+        <label><input type="checkbox" name="interests" value="sports"> Sports</label><br>
+        <label><input type="checkbox" name="interests" value="music"> Music</label><br>
+        <label><input type="checkbox" name="interests" value="books"> Books</label><br>
+        <label><input type="checkbox" name="interests" value="travel"> Travel</label><br>
+        <label><input type="checkbox" name="interests" value="art"> Art</label><br>
+    </fieldset>
+  </span>
+<span>
+  <fieldset>
+    <legend>Preferred Contact Time</legend>
+    <select name="contact_time">
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+    </select>
+  </fieldset>
+</span> 
+  <input type="submit" value="Submit Preferences">
+</form>
+
+</body>
+</html>
